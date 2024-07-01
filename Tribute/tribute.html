@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Hawking Tribute</title>
+    <link rel="stylesheet" href="tribute.css">
+</head>
+<body>
+    <main id="main">
+        <header>
+            <h1 id="title">Stephen Hawking</h1>
+            <p>Renowned physicist and cosmologist</p>
+            <p>Born: January 8, 1942</p>
+            <p>Died: March 14, 2018</p>
+            <p>Known for his work on black holes and theoretical physics</p>
+        </header>
+        <div id="img-div">
+            <figure>
+                <img id="image" src="https://wallpaperaccess.com/full/1818950.jpg" alt="Stephen Hawking">
+                <figcaption id="img-caption">Stephen Hawking, one of the most brilliant theoretical physicists in history.</figcaption>
+            </figure>
+        </div>
+        <section id="tribute-info">
+            <h2>Contributions to Science</h2>
+            <ul>
+                <li><strong>Hawking Radiation:</strong> Stephen Hawking's theory of Hawking radiation explained how black holes emit radiation and gradually lose mass.</li>
+                <li><strong>Theoretical Cosmology:</strong> Hawking made significant contributions to our understanding of the universe's origins and evolution, incorporating quantum mechanics and general relativity.</li>
+                <li><strong>Singularity Theorems:</strong> Collaborating with Roger Penrose, Hawking formulated important theorems on the existence of singularities in gravitational collapse.</li>
+                <li><strong>Books and Public Outreach:</strong> Hawking's books, such as "A Brief History of Time," made complex scientific ideas accessible to the general public, inspiring interest in cosmology and physics.</li>
+            </ul>
+            <button onclick="toggleContributions()">Toggle Contributions to Science</button>
+        </section>
+        <footer>
+            <a id="tribute-link" href="https://en.wikipedia.org/wiki/Stephen_Hawking" target="_blank">Learn more about Stephen Hawking</a>
+        </footer>
+    </main>
+
+    <script>
+        function toggleContributions() {
+            var contributionsSection = document.getElementById("tribute-info");
+            contributionsSection.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
